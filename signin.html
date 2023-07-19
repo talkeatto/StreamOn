@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamOn</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+
+<body>
+    <form class='form' onsubmit="return handleSignIn(event)">
+        <div class='control'>
+          <h1>
+            Sign In
+          </h1>
+        </div>
+        <div class='control block-cube block-input'>
+          <input name='username' id="username" placeholder='Username' type='text'>
+          <div class='bg-top'>
+            <div class='bg-inner'></div>
+          </div>
+          <div class='bg-right'>
+            <div class='bg-inner'></div>
+          </div>
+          <div class='bg'>
+            <div class='bg-inner'></div>
+          </div>
+        </div>
+        <div class='control block-cube block-input'>
+          <input name='password' id="password" placeholder='Password' type='password'>
+          <div class='bg-top'>
+            <div class='bg-inner'></div>
+          </div>
+          <div class='bg-right'>
+            <div class='bg-inner'></div>
+          </div>
+          <div class='bg'>
+            <div class='bg-inner'></div>
+          </div>
+        </div>
+        <button class='btn block-cube block-cube-hover' type='submit'>
+          <div class='bg-top'>
+            <div class='bg-inner'></div>
+          </div>
+          <div class='bg-right'>
+            <div class='bg-inner'></div>
+          </div>
+          <div class='bg'>
+            <div class='bg-inner'></div>
+          </div>
+          <div class='text'>
+            Log In
+          </div>
+        </button>
+        </form>
+
+    <script>
+        function handleSignIn(event) {
+            event.preventDefault();
+
+    
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            console.log("Username:", username);
+            console.log("Password:", password);
+
+            window.location.href = "index.html";
+            
+            return false;
+        }
+    </script>
+</body>
+
+</html>
